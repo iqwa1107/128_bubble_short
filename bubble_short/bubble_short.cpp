@@ -1,10 +1,9 @@
-
-#include <iostream>
-
 int main()
 #include <iostream>
+
 using namespace std;
 int a[20];                  //Deklarasi array a dengan ukuran 20;;; 
+
 int n;                     //Deklarasi variasi n untuk menyimpan banyak elemen pada aray 
 void input() {            // prosedur untuk input 
 	while (true) {           // loping
@@ -23,5 +22,16 @@ void input() {            // prosedur untuk input
 	for (int i = 0; i < n; i++) {
 		cout << "Data ke-" << (i + i) << ": ";
 		cin >> a[i];
+	}
+}
+void buubleShortArray() {      // prosedur untuk mengurutkan array dengan metode buuble short 
+	for (int i = 1; i < n; i++) {            // loping dengan i dari 1 hingga n-1
+		for (int j = 0; j < n - i; j++) {    // jika nilai pada a [j] lebih besar dari 
+			if (a[j] > a[j + 1]) {
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			};
+		}
 	}
 }
