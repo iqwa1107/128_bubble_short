@@ -1,7 +1,7 @@
-int main()
 #include <iostream>
-
 using namespace std;
+
+
 int a[20];                  //Deklarasi array a dengan ukuran 20;;; 
 
 int n;                     //Deklarasi variasi n untuk menyimpan banyak elemen pada aray 
